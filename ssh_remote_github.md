@@ -3,7 +3,7 @@
 > Để truy cập cũng như đẩy code từ xa, chúng ta thiết lập kết nối git local với github.com thông qua ssh key
 
 ## 1. Tạo SSH Key
-#### Trên máy tinh Window, Linux ta tạo một ssh key, tạo 1 folder để lưu thông tin ssh key c:\ssh_github_key
+#### Trên máy tinh Window ta tạo một ssh key, tạo 1 folder để lưu thông tin ssh key c:\ssh_github_key
 
 ```diff
 cd c:\ssh_github_key
@@ -54,15 +54,18 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDalDdLstgwAoxMLcG3rTiQOhHYQ7fM9eXpgP4ZJ88+
 
 ![Alt text][img02]
 
+## 3. Thiết lập private SSH cho SSH/Git tại local
 
+#### Mở thư mục user `C:\Users\kienn\.ssh` mở file `config` nếu không có thì tạo mới và thêm vào đoạn cấu hình để truy cập SSH:
 
-
-
-
-
-
-
-
+```diff
+Host github.com
+	User git
+	Port 22
+	PreferredAuthentications publickey
+	IdentityFile "C:\ssh_github_key\id_rsa"
+```
+#### Vậy là xong chúng ta có thể bắt đầu thao tác github từ xa thông qua máy tính của bạn.!
 
 
 [img01]: /images/01.jpg
