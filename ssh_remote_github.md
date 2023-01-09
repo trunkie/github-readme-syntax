@@ -48,8 +48,22 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDalDdLstgwAoxMLcG3rTiQOhHYQ7fM9eXpgP4ZJ88+
 
 ![Alt text][img01]
 
+#### Ở màn hình mới, chọn mục có tên `SSH and GPG keys`, sau đó chọn đến mục `New SSH Key`
+
+#### Tại cửa sổ mới này, điền một tiêu đề SSH ở phần `Title`, còn phần `Key` thì copy và paste toàn bộ nội dung file `id_rsa.pub` vào. Cuối cùng bấn `Add SSH Key` để hoàn thành
+
+![Alt text][img02]
+
+
+
+
+
+
+
+
 
 
 
 
 [img01]: /images/01.jpg
+[img02]: /images/02.jpg
