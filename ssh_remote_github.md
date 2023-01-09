@@ -12,7 +12,7 @@ ssh-keygen -t rsa -f id_rsa
 #### Khi nó hỏi Enter passphrase có thể nhấn `Enter` để trống cái này. Kết thúc lệnh đó thì trong c:\ssh_github_key sẽ có SSH Key cho bạn gồm có public key là file id_rsa.pub và private key là file: id_rsa
 
 ```diff
-PS C:\ssh_github_key> ssh-keygen -t rsa -f id_rsa
+C:\ssh_github_key> ssh-keygen -t rsa -f id_rsa
 Generating public/private rsa key pair.
 Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
@@ -35,3 +35,21 @@ The key's randomart image is:
 PS C:\ssh_github_key>
 ```
 
+## 2. Thiết lập SSH Public key trên GITHUB
+
+#### Mở file id_rsa.pub copy toàn bộ nội dung trong file đó vào clipboad, nội dung trong đó có dạng như:
+
+```diff
+C:\ssh_github_key> cat .\id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDalDdLstgwAoxMLcG3rTiQOhHYQ7fM9eXpgP4ZJ88+KqOC2yvnQ5XGqyrL1KB1JMHpySL8GNaBcKk1eSicThj7qcX6t7fAy/eKSn+gYJqwUlPqQsRbTBDOH0rMeNkfI62zY7OLYVuUmbsWSs+OZyxvk4441XQF2MtAiYbawwlo3nQMhGPyq9ArfL6LUo1w0yH1gk8sF6QBOcCRh+yqbMSCFYA38QOFJPWjwXOklkzoqVVBlPqOPUQRH8mwu+rv951Afh5aK4I6Y84iXcwfWNJwvMyxzDLBSehA5Pq3K5bb7WdyY++4lJuU5qO0TW+JEoEmMfCySFCsmrBcyAgXceHU574PGNkulVyzJPtK6q9yjCsWs12Hb4OyuTw98f8YR0plcvTy4A0/P73y/jScCKzVIkY5VuZxJa8MhW66nq9H/IuzpWscQvdcjH6wW0/A70EGDQpuraW6LkzMTMG70b8/txbibSBibkkCZDTotchbHwrxybg/FMnExsl1Ci+0Ln0= kienn@ntk
+```
+
+#### Đăng nhập vào tài khoản `Github` truy cập vào phần `setting` 
+
+![Alt text][img01]
+
+
+
+
+
+[img01]: /images/01.jpg
