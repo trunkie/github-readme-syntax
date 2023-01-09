@@ -60,10 +60,10 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDalDdLstgwAoxMLcG3rTiQOhHYQ7fM9eXpgP4ZJ88+
 
 ```diff
 Host github.com
-	User git
-	Port 22
-	PreferredAuthentications publickey
-	IdentityFile "C:\ssh_github_key\id_rsa"
+ - User git
+ - Port 22
+ - PreferredAuthentications publickey
+ - IdentityFile "C:\ssh_github_key\id_rsa"
 ```
 #### Vậy là xong chúng ta có thể bắt đầu thao tác github từ xa thông qua máy tính của bạn.!
 
